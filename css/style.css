@@ -1,0 +1,378 @@
+:root {
+  --margin-bottom: 30px;
+  --color-links: #262121;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  height: 100%;
+}
+
+.gallery__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url('../img/pngtree-marble-background-texture-image_325338.jpg');
+  z-index: -1;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background: url(../img/image_5.jpeg) right top/ 300px 200px no-repeat, url(../img/joel-vodell-TApAkERW5pQ-unsplash.jpg) left top/cover no-repeat;
+}
+
+.container {
+  max-width: 1280px;
+  padding: 0 20px;
+  margin: 0 auto;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 60px;
+  padding: 0;
+}
+
+.menu__link {
+  padding: 5px 10px;
+  color: #000000;
+  font-size: 1em;
+  font-weight: 500;
+  text-align: center;
+}
+
+.menu__link:hover {
+  color: #ff0000;
+}
+
+.menu__item {
+  list-style: none;
+}
+
+.menu {
+  background-color: rgba(196, 244, 255, 0.655);
+  border-radius: 0 0 30px 30px;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+.main__title {
+  font-size: 2em;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.main__artical {
+  margin-bottom: var(--margin-bottom);
+}
+
+.main__subtitle {
+  font-size: 1.5em;
+  border-bottom: 2px solid #262121;
+  color: var(--color-links);
+  font-weight: 500;
+  margin-bottom: var(--margin-bottom);
+}
+
+.main__text {
+  margin-bottom: calc(var(--margin-bottom) * 3);
+}
+
+.main__text p {
+  margin-bottom: var(--margin-bottom)
+}
+
+.main__comments {
+  margin-bottom: calc(var(--margin-bottom) / 2);
+  color: #0000ff;
+}
+
+.main__comments:hover {
+  color: #ff0000;
+}
+
+.main__text-part {
+  margin-bottom: var(--margin-bottom);
+  background-color: #7fffd4;
+}
+
+.main__text p::first-letter {
+  font-size: 2em;
+  color: #ff0000;
+  margin: 0 4px 0 15px;
+}
+
+.main__next {
+  color: #ff0000;
+  font-size: 0.8em;
+  font-weight: 300;
+  margin: 0 0 0 10px;
+  border-bottom: 2px solid #ff0000;
+}
+
+.main__next:hover {
+  border-bottom: 2px solid transparent;
+  color: blue;
+}
+
+/* ====================================================================== */
+.comments {
+  color: var(--color-links);
+  margin-bottom: calc(var(--margin-bottom) * 3);
+}
+
+.comments__comment {
+  margin-bottom: var(--margin-bottom);
+  margin-top: var(--margin-bottom);
+}
+
+.comments__user {
+  margin: 0 0 25px 0;
+}
+
+.catalog {}
+
+.catalog__list {
+  width: 50%;
+  list-style: none;
+  background-color: #f2b94ed5;
+  padding: 30px;
+  margin: 0 auto;
+}
+
+.catalog__item {
+  font-size: 1.8em;
+  color: #000000;
+  font-weight: 600;
+  margin-bottom: var(--margin-bottom);
+
+}
+
+.catalog__sublist {
+  width: 75%;
+  list-style: none;
+  margin: 20px 0 0 auto;
+  background-color: #6b6bc5;
+  border-radius: 30px;
+  padding: 15px;
+}
+
+.catalog__subitem {
+  position: relative;
+  font-size: 0.8em;
+  color: #ffffff;
+  font-weight: 400;
+  margin-bottom: calc(var(--margin-bottom) / 3);
+}
+
+.catalog__label {
+  display: inline-flex;
+  font-size: 1.3rem;
+  color: #ffffff;
+  font-weight: 400;
+  background-color: green;
+  border-radius: 50%;
+  margin: 0 0 0 15px;
+  padding: 3px;
+}
+
+.gallery__title {
+  margin: 0 0 10px 0;
+}
+
+.gallery__grid {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  padding: 0 0 50px 0;
+}
+
+.gallery__img {
+  max-width: 100%;
+  border: 4px solid #0000ff;
+  height: 300px;
+  object-fit: cover;
+}
+
+.gallery__img:hover {
+  border: 4px solid transparent;
+}
+
+@media (max-width: 991px) {
+  .gallery__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.form {
+  padding: 0 0 60px 0;
+}
+
+fieldset {
+  max-width: 70%;
+  padding: 30px;
+  margin-bottom: var(--margin-bottom);
+}
+
+.form__title {
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+.form__item {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  margin-bottom: var(--margin-bottom);
+}
+
+.form__item--checkbox {
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: calc(var(--margin-bottom) / 3);
+  border: 2px dashed transparent;
+}
+
+.form__item--checkbox:hover {
+  border: 2px dashed blue;
+}
+
+.form__item label {
+  font-size: 1em;
+  font-weight: 400;
+  margin-bottom: calc(var(--margin-bottom) / 3);
+}
+
+.form__item--checkbox label {
+  margin: 0 10px 0 0;
+}
+
+input {
+  padding: 5px;
+  font-size: 0.8em;
+  border: 1px solid black;
+}
+
+input[name="username"] {
+  text-transform: capitalize;
+}
+
+.form__checkbox {
+  margin-bottom: var(--margin-bottom);
+}
+
+.form__text {
+  font-size: 1em;
+  font-weight: 500;
+  margin-bottom: calc(var(--margin-bottom) / 2);
+}
+
+.form__buttons {
+  display: inline-flex;
+  gap: 25px;
+}
+
+.form__button {
+  font-size: 0.8em;
+  background-color: #0000ff;
+  color: #ffffff;
+  padding: 10px;
+  border: none;
+}
+
+.form__button:hover {
+  background-color: #ff0000;
+}
+
+.page__nav {
+  margin-bottom: var(--margin-bottom);
+}
+
+.page__link {
+  color: #6b6bc5;
+  font-size: 1.5em;
+  margin: 0 15px 0 0;
+}
+
+.page__link:hover {
+  color: #ff0000;
+}
+
+.page__item {
+  margin-bottom: var(--margin-bottom);
+}
+
+.page__item p {
+  margin-bottom: calc(var(--margin-bottom) / 3);
+}
+
+.page__item p::first-letter {
+  margin: 0 0 0 20px;
+  font-size: 1.6em;
+}
+
+.page__item img {
+  max-width: 100%;
+  margin: 30px;
+}
+
+.page__title {
+  color: #ba2424;
+}
+
+.contacts__form {
+  margin: 40px 0;
+}
+
+/* =============================================================================== */
+.footer {
+  background-color: rgba(196, 244, 255, 0.655);
+  border-radius: 30px 30px 0 0;
+  padding: 20px 0;
+}
+
+.footer__item {
+  text-align: center;
+}

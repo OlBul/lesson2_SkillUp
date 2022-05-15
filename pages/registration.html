@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Ubuntu:ital,wght@0,400;0,500;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Регистрация</title>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="menu">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a class="menu__link" href="../index.html">Главная</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="articles.html">Статьи</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="catalog.html">Каталог</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="contacts.html">Контакты</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="gallery.html">Галерея</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="page-nav.html"> Навигация</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="registration.html">Регистрация</a>
+        </li>
+      </ul>
+    </nav>
+    <section class="main form">
+      <h1 class="main__title">Регистрация</h1>
+      <h2 class="main__subtitle">Форма для регистрации.</h2>
+      <form action="https://tests.fomenko.top/echo/index.php" method="get">
+        <fieldset>
+          <legend class="form__title">Основная информация</legend>
+          <div class="form__item">
+            <label for="username">Фамилия, Имя, Отчество*</label>
+            <input type="text" placeholder="Фамилия, Имя, Отчество" id="username" name="username" required>
+          </div>
+          <div class="form__item">
+            <label for="foto">Добавьте фотографию*</label>
+            <input type="file" id="foto" name="foto">
+          </div>
+          <div class="form__item">
+            <label for="email">Адрес электронной почты*</label>
+            <input type="email" id="email" name="email" placeholder="Введите email" required>
+          </div>
+          <div class="form__item">
+            <label for="password">Пароль*</label>
+            <input type="password" id="password" name="password" placeholder="Пароль" required>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend class="form__title">Дополнительная информация</legend>
+          <div class="form__item">
+            <label for="website">Адрес сайта</label>
+            <input type="text" id="website" placeholder="mysite.name" name="website">
+          </div>
+          <div class="form__checkbox">
+            <div class="form__text">Выберите пол</div>
+            <div class="form__item form__item--checkbox">
+              <label for="woman">Женский</label>
+              <input type="radio" id="woman" name="gender" value="woman">
+            </div>
+            <div class="form__item form__item--checkbox">
+              <label for="man">Мужской</label>
+              <input type="radio" id="man" name="gender" value="man">
+            </div>
+          </div>
+          <div class="form__item">
+            <label for="date">Введите дату рождения</label>
+            <input type="date" id="date" name="dateofbirth">
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend class="form__title">Ваши предпочтения</legend>
+          <div class="form__checkbox">
+            <div class="form__text">Какую кухню вы предпочитаете?</div>
+            <div class="form__item form__item--checkbox">
+              <label for="ua">Украинская кухня</label>
+              <input type="checkbox" id="ua" name="kit" value="ua">
+            </div>
+            <div class="form__item form__item--checkbox">
+              <label for="gr">Грузинская кухня</label>
+              <input type="checkbox" id="gr" name="kit" value="gr">
+            </div>
+            <div class="form__item form__item--checkbox">
+              <label for="it">Итальянская кухня</label>
+              <input type="checkbox" id="it" name="kit" value="it">
+            </div>
+            <div class="form__item form__item--checkbox">
+              <label for="jp">Японская кухня</label>
+              <input type="checkbox" id="jp" name="kit" value="jp">
+            </div>
+            <div class="form__item form__item--checkbox">
+              <label for="another">Другой вариант</label>
+              <input type="checkbox" id="another" name="kit" value="another">
+            </div>
+          </div>
+          <div class="form__item">
+            <label for="about">Расскажите о себе</label>
+            <textarea name="about" id="about" cols="30" rows="5" placeholder="Расскажите о себе"></textarea>
+          </div>
+        </fieldset>
+        <div class="form__buttons">
+          <input class="form__button" type="submit" value="Отправить форму">
+          <input class="form__button" type="reset" value="Сбросить форму">
+        </div>
+      </form>
+    </section>
+    <footer class="footer">
+      <div class="footer__item">&copy; Булгакова Ольга</div>
+    </footer>
+  </div>
+</body>
+
+</html>
