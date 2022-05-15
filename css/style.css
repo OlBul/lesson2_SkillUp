@@ -150,7 +150,6 @@ a {
   color: blue;
 }
 
-/* ====================================================================== */
 .comments {
   color: var(--color-links);
   margin-bottom: calc(var(--margin-bottom) * 3);
