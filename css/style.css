@@ -177,7 +177,18 @@ a {
   color: #000000;
   font-weight: 600;
   margin-bottom: var(--margin-bottom);
+}
 
+.catalog__item-link {
+  color: #0000ff;
+  font-size: 1em;
+  margin: 0 10px 0 0;
+}
+
+.catalog__subitem-link {
+  color: #000000;
+  font-size: 1em;
+  margin: 0 10px 0 0;
 }
 
 .catalog__sublist {
